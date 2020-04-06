@@ -32,6 +32,10 @@
   - create a new book
 
 
+# Prerequisites
+  - Node 12
+  - Docker/Docker-compose
+
 
 # Dependencies
   - axios
