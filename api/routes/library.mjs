@@ -1,5 +1,5 @@
 import express from "express";
-import libraryService from "../../lib/library/library_service.js";
+import libraryService from "../../lib/library/library_service.mjs";
 
 const router = new express.Router();
 

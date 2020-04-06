@@ -2,12 +2,11 @@
   "name": "node-best-sellers",
   "version": "1.0.0",
   "description": "",
-  "main": "api/server.js",
-  "type": "module",
+  "main": "api/server.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --experimental-modules ./api/server.js",
-    "start:dev": "nodemon --experimental-modules ./api/server.js",
+    "start": "node --experimental-modules ./api/server.mjs",
+    "start:dev": "nodemon --experimental-modules ./api/server.mjs",
     "loader": "node --experimental-modules ./jobs/load_best_sellers.js"
   },
   "repository": {
