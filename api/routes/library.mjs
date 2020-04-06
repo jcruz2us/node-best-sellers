@@ -15,7 +15,14 @@ router.get('/api/books', async function(req, res) {
 });
 
 router.post('/api/books', async function (req, res) {
-  res.json([]);
+  const input = req.body;
+  const newBook = {
+    title: input.title,
+    description: input.description,
+    author: input.author,
+  };
+  const [book, _isNew] = await libraryService.addBook(newBook);
+  res.json(book);
 });
 
 export default router;
