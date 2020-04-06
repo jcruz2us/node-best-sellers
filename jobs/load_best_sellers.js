@@ -1,6 +1,8 @@
 import axios from "axios";
 import jsdom from "jsdom";
 
+import libraryService from "../lib/library/library_service.js";
+
 async function run() {
   
   // make request for latest best sellers
@@ -17,7 +19,9 @@ async function run() {
     const author = bookElement.querySelector(`[itemprop="author"]`).textContent.replace("by", "").trim();
     const title = bookElement.querySelector(`[itemprop="name"]`).textContent;
     const description = bookElement.querySelector(`[itemprop="description"]`).textContent;
-    console.log({author, title, description});
+
+    // insert into database
+    await libraryService.addBook({author, title, description});
   }
 }
 
