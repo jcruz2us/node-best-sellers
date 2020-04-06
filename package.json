@@ -15,5 +15,16 @@
   "bugs": {
     "url": "https://github.com/jcruz2us/node-best-sellers/issues"
   },
-  "homepage": "https://github.com/jcruz2us/node-best-sellers#readme"
+  "homepage": "https://github.com/jcruz2us/node-best-sellers#readme",
+  "dependencies": {
+    "axios": "0.19.2",
+    "body-parser": "1.19.0",
+    "express": "4.17.1",
+    "jsdom": "16.2.2",
+    "nodemon": "2.0.2",
+    "pg": "8.0.0",
+    "pg-hstore": "2.3.3",
+    "sequelize": "5.21.6",
+    "sequelize-cli": "5.5.1"
+  }
 }
