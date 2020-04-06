@@ -1,0 +1,6 @@
+var path = require('path')
+
+module.exports = {
+  'config': path.resolve('config', 'library_database.js'),
+  'migrations-path': path.resolve('migrations')
+}
