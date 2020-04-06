@@ -1,0 +1,19 @@
+{
+  "name": "node-best-sellers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcruz2us/node-best-sellers.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcruz2us/node-best-sellers/issues"
+  },
+  "homepage": "https://github.com/jcruz2us/node-best-sellers#readme"
+}
