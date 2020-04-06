@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node --experimental-modules ./api/server.mjs",
     "start:dev": "nodemon --experimental-modules ./api/server.mjs",
-    "loader": "node --experimental-modules ./jobs/load_best_sellers.js"
+    "loader": "node --experimental-modules ./jobs/load_best_sellers.mjs"
   },
   "repository": {
     "type": "git",

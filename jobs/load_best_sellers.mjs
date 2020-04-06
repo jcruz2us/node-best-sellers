@@ -1,7 +1,7 @@
 import axios from "axios";
 import jsdom from "jsdom";
 
-import libraryService from "../lib/library/library_service.js";
+import libraryService from "../lib/library/library_service.mjs";
 
 async function run() {
   

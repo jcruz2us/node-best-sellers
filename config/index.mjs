@@ -1,4 +1,4 @@
-import library_database from "./library_database.cjs";
+import library_database from "./library_database.js";
 
 const environment = process.env.NODE_ENV || "development";
 
@@ -6,9 +6,7 @@ const config = {
   server: {
     PORT: 3000
   },
-  library_database: {
-    url: library_database[environment],
-  },
+  library_database: library_database[environment],
 };
 
 
