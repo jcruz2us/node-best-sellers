@@ -4,7 +4,8 @@ import libraryService from "../../lib/library/library_service.mjs";
 const router = new express.Router();
 
 router.get('/api/authors', async function(req, res) {
-  return res.json([]);
+  const authors = await libraryService.findAllAuthors();
+  return res.json(authors);
 });
 
 router.get('/api/books', async function(req, res) {
