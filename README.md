@@ -2,6 +2,24 @@
 
 - Simple search through the best sellers from https://www.nytimes.com/books/best-sellers/
 
+# Prerequisites
+  - Node 12
+  - Docker/Docker-compose
+
+
+Running
+```
+docker-compose up -d
+npx sequelize-cli db:migrate
+npm run loader
+npm run start
+```
+
+
+Cleanup
+```
+docker-compose down
+```
 
 # Implementation
 
@@ -32,9 +50,7 @@
   - create a new book
 
 
-# Prerequisites
-  - Node 12
-  - Docker/Docker-compose
+
 
 
 # Dependencies
